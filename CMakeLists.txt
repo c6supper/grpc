@@ -45,8 +45,8 @@ set(gRPC_INSTALL_SHAREDIR "share/grpc" CACHE STRING "Installation directory for 
 
 # Options
 option(gRPC_BUILD_TESTS "Build tests" OFF)
-option(gRPC_BUILD_CODEGEN "Build codegen" ON)
-option(gRPC_BUILD_CSHARP_EXT "Build C# extensions" ON)
+option(gRPC_BUILD_CODEGEN "Build codegen" OFF)
+option(gRPC_BUILD_CSHARP_EXT "Build C# extensions" OFF)
 option(gRPC_BACKWARDS_COMPATIBILITY_MODE "Build libraries that are binary compatible across a larger number of OS and libc versions" OFF)
 
 set(gRPC_INSTALL_default ON)

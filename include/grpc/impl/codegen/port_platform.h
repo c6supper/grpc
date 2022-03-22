@@ -397,7 +397,6 @@
 #define GPR_HAS_PTHREAD_H 1
 #define GPR_GETPID_IN_UNISTD_H 1
 #elif defined(__QNX__)
-#define GPR_POSIX_CRASH_HANDLER 1
 #define GPR_PLATFORM_STRING "qnx"
 #ifndef _BSD_SOURCE
 #define _BSD_SOURCE
@@ -409,6 +408,7 @@
 #define _GNU_SOURCE
 #endif
 #undef GPR_ABSEIL_SYNC
+#define GPR_POSIX_TMPFILE 1
 #define GPR_CPU_POSIX 1
 #define GPR_GCC_ATOMIC 1
 #define GPR_GCC_TLS 1
